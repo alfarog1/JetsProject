@@ -1,10 +1,29 @@
 package com.skilldistillery.jets.jets.app;
 
+import java.util.Scanner;
+
 public class JetsApp {
-
+	private Airfield airfield;
+	Scanner kb = new Scanner(System.in);
+	
+	public JetsApp() {
+		
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		launch();
+		
+		
 
+	}
+
+	private static void launch() {
+		
+		
+	}
+	
+	private static void displayUserMenu() {
+		
 	}
 
 }
