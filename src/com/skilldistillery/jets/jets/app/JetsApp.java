@@ -3,8 +3,11 @@ package com.skilldistillery.jets.jets.app;
 import java.util.Scanner;
 
 public class JetsApp {
-	private Airfield airfield;
+	private AirField airfield;
 	Scanner kb = new Scanner(System.in);
+	
+	
+	
 	
 	public JetsApp() {
 		
