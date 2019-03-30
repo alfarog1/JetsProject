@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -128,7 +127,7 @@ public class AirField {
 		System.out.print("Please enter the model for the jet you're adding: ");
 		model = kb.nextLine();
 		
-		System.out.println("Please enter the speed for the jet you're adding: ");
+		System.out.println("Please enter the speed in MPH for the jet you're adding: ");
 		speed = kb.nextDouble();
 		
 		System.out.println("Please enter the range for the jet you're adding: ");
@@ -152,7 +151,18 @@ public class AirField {
 		jets.add(newJet);
 	}
 	
-	public void removeJetFromFleet() {
+	public void removeJetFromFleet(Scanner kb) {
+		kb.hasNextLine();
+		int count = 1;
+		int remove;
+		for (Jet jet : jets) {
+			System.out.println(count++ + ". " +jet);
+			
+		}
+		System.out.println("What is the number of the plane you want to remove? ");
+		remove = kb.nextInt();
+		remove = remove -1;
+		jets.remove(remove);
 		
 		
 	}

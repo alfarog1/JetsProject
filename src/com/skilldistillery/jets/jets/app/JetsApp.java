@@ -69,7 +69,7 @@ public class JetsApp {
 			airfield.addJetToFleet(kb);
 			break;
 		  case 8:
-	//		removeJetFromFleet();
+			airfield.removeJetFromFleet(kb);
 			break;
 		  case 9:
 			  System.out.println("Enjoy the rest of your day!");
