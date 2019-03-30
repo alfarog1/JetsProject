@@ -2,7 +2,7 @@ package com.skilldistillery.jets.jets.app;
 
 import com.skilldistillery.jets.models.Jet;
 
-public class FighterJet extends Jet{
+public class FighterJet extends Jet implements CombatReady{
 	
 	
 	public FighterJet() {
@@ -16,6 +16,6 @@ public class FighterJet extends Jet{
 	}
 
 	public void fight() {
-		
+		System.out.println( this.getModel() + " is engaging the enemy. " );
 	}
 }

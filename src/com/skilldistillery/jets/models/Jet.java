@@ -76,6 +76,7 @@ public abstract class Jet {
 		System.out.println( this.getModel() + " ~~~~Flying> " );
 	}
 	
+	
 	public double getSpeedInMach() {
 		return 0;
 		

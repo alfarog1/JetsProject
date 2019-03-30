@@ -21,16 +21,14 @@ public class JetsApp {
 	public static void main(String[] args) {
 		AirField airfield = new AirField();
 		JetsApp j = new JetsApp();
-		//System.out.println(j.airfield.getJets());
-		
+
 		j.displayUserMenu(airfield);
-		
 
 	}
 
-	
-
 	private void displayUserMenu(AirField airfield) {
+		int choice = 0;
+		do {
 		
 		System.out.println("Menu Options:\n" + 
 				"\n" + 
@@ -46,7 +44,7 @@ public class JetsApp {
 		
 		
 		
-		int choice = kb.nextInt();
+		choice = kb.nextInt();
 		switch (choice) {
 		  case 1:
 			  System.out.println("Here is a list of your fleet: \n");
@@ -56,66 +54,30 @@ public class JetsApp {
 			airfield.flyAll();
 			break;
 		  case 3:
-			viewFastest();
+			airfield.viewFastest();
 			break;
 		  case 4:
-			longestRange();
+			airfield.viewLongestRange();
 			break;
 		  case 5:
-			loadAllCargoJets();
+			airfield.loadAllCargoJets();
 			break;
 		  case 6:
-			dogfight();
+			airfield.dogFight();
 			break;
 		  case 7:
-			addJetToFleet();
+			airfield.addJetToFleet(kb);
 			break;
 		  case 8:
-			removeJetFromFleet();
+	//		removeJetFromFleet();
 			break;
 		  case 9:
-			quit();
+			  System.out.println("Enjoy the rest of your day!");
+//		System.exit(0);
 			break;
 		}
-		
-	}
-	
-	private void quit() {
-		// TODO Auto-generated method stub
+		} while (choice != 9);
 		
 	}
 
-	private void removeJetFromFleet() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void addJetToFleet() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void dogfight() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void loadAllCargoJets() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void longestRange() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void viewFastest() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	
-	
-		
 }

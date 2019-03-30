@@ -2,7 +2,7 @@ package com.skilldistillery.jets.jets.app;
 
 import com.skilldistillery.jets.models.Jet;
 
-public class CargoPlane extends Jet {
+public class CargoPlane extends Jet implements CargoCarrier{
 	
 	
 	public CargoPlane() {
@@ -15,8 +15,8 @@ public class CargoPlane extends Jet {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void Cargo() {
-		
+	public void loadCargo() {
+		System.out.println( this.getModel() + " is fully loaded. " );
 	}
 	
 }
